@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using API.Dtos;
+using API.Errors;
 using AutoMapper;
 using Main.Interfaces;
 using Main.Models;
@@ -13,9 +14,7 @@ using Support.Data;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ProdutosController : ControllerBase
+    public class ProdutosController : BaseApiController
     {
         private readonly IGenericRepository<Produto> _produtosRepo;
         private readonly IGenericRepository<ProdutoCategoria> _produtoCategoriaRepo;
@@ -43,11 +42,15 @@ namespace API.Controllers
         } 
        
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         public async Task<ActionResult<ProdutoToReturnDto>> PegarProdutoId(int id)
         {
             var spec = new ProdutoMarcaCatSpecification(id);
 
             var produto = await _produtosRepo.GetEntityWithSpec(spec);
+
+            if (produto == null) return NotFound(new ApiResponse(404));
 
             return _mapper.Map<Produto, ProdutoToReturnDto>(produto);
         }
