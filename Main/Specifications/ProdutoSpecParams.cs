@@ -12,7 +12,7 @@ namespace Main.Specifications
         }
         public int? MarcaId { get; set; } 
         public int? CategId { get; set; } 
-        public string? Sort { get; set; } 
+        public string Sort { get; set; } 
         private string _search;
         public string Search 
         {
