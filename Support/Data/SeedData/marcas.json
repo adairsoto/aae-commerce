@@ -3,7 +3,7 @@
     "Nome": "Angular"
   },
   {
-    "Nome": "NetCore"
+    "Nome": ".NetFramework"
   },
   {
     "Nome": "VS Code"
@@ -15,6 +15,6 @@
     "Nome": "Typescript"
   },
   {
-    "Nome": "Redis"
+    "Nome": "NodeJS"
   }
 ]

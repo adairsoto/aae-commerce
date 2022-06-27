@@ -12,7 +12,7 @@ namespace Support.Data.Migrations
 {
     [DbContext(typeof(LojaContext))]
     [Migration("20220623025819_Initial")]
-    partial class Initial
+    partial class Start
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
