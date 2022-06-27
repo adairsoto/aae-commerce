@@ -1,28 +1,36 @@
 <div class="container">
   <div class="row">
     <section class="col-3">
-      <h5 class="text-warning ml-3">Ordenar por:</h5>
-      <select class="custom-select mb-3" (change)="sortSelec($event.target.value)">
+      <h5 class="ml-3" style="color:blueviolet">Ordenar por:</h5>
+      <select
+        class="custom-select mb-3"
+        (change)="sortSelec($event.target.value)"
+      >
         <option *ngFor="let s of sortOptions" [value]="s.value">
-          {{s.nome}}
+          {{ s.nome }}
         </option>
-        
       </select>
 
-      <h5 class="text-warning ml-3">Marcas</h5>
+      <h5 class="ml-3" style="color:blueviolet">Marcas</h5>
       <ul class="list-group my-3">
-        <li class="list-group-item" *ngFor="let m of marcas"
-        [class.active]="m.id === this.marcaIdSelec"
-        (click)="marcaSelec(m.id)" 
-        >{{m.nome}}
+        <li
+          class="list-group-item"
+          *ngFor="let m of marcas"
+          [class.active]="m.id === this.marcaIdSelec"
+          (click)="marcaSelec(m.id)"
+        >
+          {{ m.nome }}
         </li>
       </ul>
-      <h5 class="text-warning ml-3">Categorias</h5>
+      <h5 class="ml-3" style="color:blueviolet">Categorias</h5>
       <ul class="list-group my-3">
-        <li class="list-group-item" *ngFor="let c of categ"
-        [class.active]="c.id === this.categIdSelec"
-        (click)="categSelec(c.id)"
-        >{{c.nome}}
+        <li
+          class="list-group-item"
+          *ngFor="let c of categ"
+          [class.active]="c.id === this.categIdSelec"
+          (click)="categSelec(c.id)"
+        >
+          {{ c.nome }}
         </li>
       </ul>
     </section>
@@ -30,8 +38,8 @@
       <div class="d-flex justify-content-between align-items-center pb-2">
         <header>
           <span
-            >Mostrando <strong>10</strong> de
-            <strong>16 </strong>Resultados</span
+            >Mostrando <strong>12</strong> de
+            <strong>12 </strong>Resultados</span
           >
         </header>
         <div class="form-inline mt-2">
@@ -47,7 +55,7 @@
       </div>
       <div class="row">
         <div class="col-4 mb-4" *ngFor="let p of produtos">
-            <app-produto-item [produto]="p"></app-produto-item>
+          <app-produto-item [produto]="p"></app-produto-item>
         </div>
       </div>
     </section>

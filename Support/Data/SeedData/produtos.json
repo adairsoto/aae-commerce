@@ -1,146 +1,98 @@
 [
   {
-    "Nome": "Angular Speedster Board 2000",
-    "Descricao": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Preco": 200,
-    "ImagemUrl": "images/products/sb-ang1.png",
+    "Nome": "SAMSUNG S51PRO",
+    "Descricao": "SAMSUNG S51PRO I7 QUAD CORE WIN 10 24GB 1TB+512GB SSD 15.6\"",
+    "Preco": 18457,
+    "ImagemUrl": "images/products/61nEJYhQc5S._AC_SX679_.jpg",
     "ProdutoCategoriaId": 1,
     "ProdutoMarcaId": 1
   },
   {
-    "Nome": "Green Angular Board 3000",
-    "Descricao": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "Preco": 150,
-    "ImagemUrl": "images/products/sb-ang2.png",
+    "Nome": "Samsung Odyssey",
+    "Descricao": "Samsung Odyssey Intel® Core™ i5H, Windows 10, 8GB, 1TB, GeForce® GTX 1650 4GB, 15.6\" PLS Full HD LED",
+    "Preco": 12464,
+    "ImagemUrl": "images/products/81rXz2xWgdL._AC_SX679_.jpg",
     "ProdutoCategoriaId": 1,
     "ProdutoMarcaId": 1
   },
   {
-    "Nome": "Core Board Speed Rush 3",
-    "Descricao": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Preco": 180,
-    "ImagemUrl": "images/products/sb-core1.png",
+    "Nome": "Dell Alienware x17",
+    "Descricao": "Dell Alienware x17 R2 AW17-X17R2-M30S 17.3\" FHD 12ª ger Intel Core i9 16GB 1TB SSD RTX 3080Ti",
+    "Preco": 38619,
+    "ImagemUrl": "images/products/Notebook-Alienware-x17-R2-Branco.webp",
     "ProdutoCategoriaId": 1,
     "ProdutoMarcaId": 2
   },
   {
-    "Nome": "Net Core Super Board",
-    "Descricao": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Preco": 300,
-    "ImagemUrl": "images/products/sb-core2.png",
+    "Nome": "Dell XPS 13 9380",
+    "Descricao": "Dell XPS 13 9380 13,3\" FHD 1920x1080 Intel Core i7-8565U 16GB RAM 512GB PCIe SSD W10 PRO",
+    "Preco": 22838,
+    "ImagemUrl": "images/products/612XA+ntjML._AC_SX679_.jpg",
     "ProdutoCategoriaId": 1,
     "ProdutoMarcaId": 2
   },
   {
-    "Nome": "React Board Super Whizzy Fast",
-    "Descricao": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Preco": 250,
-    "ImagemUrl": "images/products/sb-react1.png",
+    "Nome": "Acer Nitro 5",
+    "Descricao": "Acer Nitro 5 AN517-54-77KG, Intel Core i7-11800H, NVIDIA GeForce RTX 3050Ti, tela IPS 17,3\" FHD 144 Hz, DDR4 16 GB, SSD NVMe 1 TB",
+    "Preco": 17999,
+    "ImagemUrl": "images/products/71GAZomYfyL._AC_SX679_.jpg",
     "ProdutoCategoriaId": 1,
+    "ProdutoMarcaId": 3
+  },
+  {
+    "Nome": "Acer Predator Helios 300",
+    "Descricao": "Acer Predator Helios 300 Gaming Laptop, Intel i7-10750H, NVIDIA GeForce RTX 2060 6GB, 15,6 Full HD 144Hz 3ms IPS, 16GB Dual-Channel DDR4, 512GB NVMe SSD",
+    "Preco": 16498,
+    "ImagemUrl": "images/products/81VNCWPxsVL._AC_SX679_.jpg",
+    "ProdutoCategoriaId": 1,
+    "ProdutoMarcaId": 3
+  },
+  {
+    "Nome": "Samsung Smart TV 55\" 55Q65B 2022",
+    "Descricao": "Samsung Smart TV 55\" QLED 4K 55Q65B 2022, Modo Game, Som em Movimento, Tela sem limites, Design Slim 55",
+    "Preco": 3999,
+    "ImagemUrl": "images/products/61jYJDjYKkL._AC_SX679_.jpg",
+    "ProdutoCategoriaId": 2,
+    "ProdutoMarcaId": 1
+  },
+  {
+    "Nome": "Samsung Smart TV 50\" BU8000 2022",
+    "Descricao": "Samsung Smart TV 50\" Crystal UHD 4K BU8000 2022 50\"",
+    "Preco": 3199,
+    "ImagemUrl": "images/products/61+nlFfRw7L._AC_SX679_.jpg",
+    "ProdutoCategoriaId": 2,
+    "ProdutoMarcaId": 1
+  },
+  {
+    "Nome": "Smart TV Philco PTV50RCG70BL 50\"",
+    "Descricao": "Smart TV Philco PTV50RCG70BL Roku 50\", 4K UltraHD D-Led, Borda Infinita, Quad Core, Preta",
+    "Preco": 3489,
+    "ImagemUrl": "images/products/81aeW0h+12S._AC_SX679_.jpg",
+    "ProdutoCategoriaId": 2,
     "ProdutoMarcaId": 4
   },
   {
-    "Nome": "Typescript Entry Board",
-    "Descricao": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "Preco": 120,
-    "ImagemUrl": "images/products/sb-ts1.png",
-    "ProdutoCategoriaId": 1,
+    "Nome": "Smart TV Philco PTV58G70RCBL 58\"",
+    "Descricao": "Smart TV Roku 4K UHD 58\" TV PTV58G70RCBL 4K LED - Wi-Fi 3 HDMI, USB, PHILCO",
+    "Preco": 2999,
+    "ImagemUrl": "images/products/71JoBLGBjxL._AC_SX679_.jpg",
+    "ProdutoCategoriaId": 2,
+    "ProdutoMarcaId": 4
+  },
+  {
+    "Nome": "Smart TV LED 50\" SEMP SK8300",
+    "Descricao": "Smart TV LED 50\" SEMP SK8300 Ultra HD 4K HDR, Android, Wi-Fi, Chromecast Integrado",
+    "Preco": 2499,
+    "ImagemUrl": "images/products/51llthoVEvL._AC_.jpg",
+    "ProdutoCategoriaId": 2,
     "ProdutoMarcaId": 5
   },
   {
-    "Nome": "Core Blue Hat",
-    "Descricao": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Preco": 10,
-    "ImagemUrl": "images/products/hat-core1.png",
+    "Nome": "Roku TV LED 43\" SEMP R5500",
+    "Descricao": "Roku TV LED 43\" SEMP R5500 FHD Wifi dual band, 3 HDMI, 1 USB, com controle por aplicativo",
+    "Preco": 2049,
+    "ImagemUrl": "images/products/51A3N8zDLAL._AC_SX679_.jpg",
     "ProdutoCategoriaId": 2,
-    "ProdutoMarcaId": 2
-  },
-  {
-    "Nome": "Green React Woolen Hat",
-    "Descricao": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Preco": 8,
-    "ImagemUrl": "images/products/hat-react1.png",
-    "ProdutoCategoriaId": 2,
-    "ProdutoMarcaId": 4
-  },
-  {
-    "Nome": "Purple React Woolen Hat",
-    "Descricao": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Preco": 15,
-    "ImagemUrl": "images/products/hat-react2.png",
-    "ProdutoCategoriaId": 2,
-    "ProdutoMarcaId": 4
-  },
-  {
-    "Nome": "Blue Code Gloves",
-    "Descricao": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "Preco": 18,
-    "ImagemUrl": "images/products/glove-code1.png",
-    "ProdutoCategoriaId": 4,
-    "ProdutoMarcaId": 3
-  },
-  {
-    "Nome": "Green Code Gloves",
-    "Descricao": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Preco": 15,
-    "ImagemUrl": "images/products/glove-code2.png",
-    "ProdutoCategoriaId": 4,
-    "ProdutoMarcaId": 3
-  },
-  {
-    "Nome": "Purple React Gloves",
-    "Descricao": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
-    "Preco": 16,
-    "ImagemUrl": "images/products/glove-react1.png",
-    "ProdutoCategoriaId": 4,
-    "ProdutoMarcaId": 4
-  },
-  {
-    "Nome": "Green React Gloves",
-    "Descricao": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Preco": 14,
-    "ImagemUrl": "images/products/glove-react2.png",
-    "ProdutoCategoriaId": 4,
-    "ProdutoMarcaId": 4
-  },
-  {
-    "Nome": "Redis Red Boots",
-    "Descricao": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Preco": 250,
-    "ImagemUrl": "images/products/boot-redis1.png",
-    "ProdutoCategoriaId": 3,
-    "ProdutoMarcaId": 6
-  },
-  {
-    "Nome": "Core Red Boots",
-    "Descricao": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Preco": 189.99,
-    "ImagemUrl": "images/products/boot-core2.png",
-    "ProdutoCategoriaId": 3,
-    "ProdutoMarcaId": 2
-  },
-  {
-    "Nome": "Core Purple Boots",
-    "Descricao": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Preco": 199.99,
-    "ImagemUrl": "images/products/boot-core1.png",
-    "ProdutoCategoriaId": 3,
-    "ProdutoMarcaId": 2
-  },
-  {
-    "Nome": "Angular Purple Boots",
-    "Descricao": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "Preco": 150,
-    "ImagemUrl": "images/products/boot-ang2.png",
-    "ProdutoCategoriaId": 3,
-    "ProdutoMarcaId": 1
-  },
-  {
-    "Nome": "Angular Blue Boots",
-    "Descricao": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Preco": 180,
-    "ImagemUrl": "images/products/boot-ang1.png",
-    "ProdutoCategoriaId": 3,
-    "ProdutoMarcaId": 1
+    "ProdutoMarcaId": 5
   }
 ]
