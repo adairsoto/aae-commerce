@@ -1,0 +1,22 @@
+<div class="row" *ngIf="produto">
+    <div class="col-6">
+        <img src="{{produto.imagemUrl}}" alt="{{produto.nome}}" class="img-fluid w-100">
+    </div>
+    <div class="col-6">
+        <h3>{{produto.nome}}</h3>
+        <p>{{produto.preco | currency: 'BRL'}}</p>
+        <div class="d-flex justify-content-start align-items-center">
+            <i class="fa fa-minus-circle text-warning mr-2" style="cursor: pointer; font-size: 2em;"></i>
+            <span class="font-weight-bold" style="font-size: 1.5em;">2</span>
+            <i class="fa fa-plus-circle text-warning mx-2" style="cursor: pointer; font-size: 2em;"></i>
+            <button class="btn btn-outline-secondary btn-lb ml-3">Adicionar ao carrinho</button>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 ml-3">
+            <h4>Descrição</h4>
+            <p>{{produto.descricao}}</p>
+        </div>
+    </div>
+</div>
+

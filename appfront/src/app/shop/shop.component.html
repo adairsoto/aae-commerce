@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <section class="col-3">
-      <h5 class="ml-3" style="color:blueviolet">Ordenar por:</h5>
+      <h5 class="ml-3" style="color: blueviolet">Ordenar por:</h5>
       <select
         class="custom-select mb-3"
         (change)="sortSelec($event.target.value)"
@@ -11,23 +11,23 @@
         </option>
       </select>
 
-      <h5 class="ml-3" style="color:blueviolet">Marcas</h5>
+      <h5 class="ml-3" style="color: blueviolet">Marcas</h5>
       <ul class="list-group my-3">
         <li
           class="list-group-item"
           *ngFor="let m of marcas"
-          [class.active]="m.id === this.marcaIdSelec"
+          [class.active]="m.id === this.shopParams.marcaId"
           (click)="marcaSelec(m.id)"
         >
           {{ m.nome }}
         </li>
       </ul>
-      <h5 class="ml-3" style="color:blueviolet">Categorias</h5>
+      <h5 class="ml-3" style="color: blueviolet">Categorias</h5>
       <ul class="list-group my-3">
         <li
           class="list-group-item"
           *ngFor="let c of categ"
-          [class.active]="c.id === this.categIdSelec"
+          [class.active]="c.id === this.shopParams.categId"
           (click)="categSelec(c.id)"
         >
           {{ c.nome }}
@@ -36,27 +36,28 @@
     </section>
     <section class="col-9">
       <div class="d-flex justify-content-between align-items-center pb-2">
-        <header>
-          <span
-            >Mostrando <strong>12</strong> de
-            <strong>12 </strong>Resultados</span
-          >
-        </header>
+        <app-paging-header
+          [totalCount]="totalCount"
+          [pageSize]="this.shopParams.pageSize"
+          [pageNumber]="this.shopParams.pageNumber"
+        ></app-paging-header>
         <div class="form-inline mt-2">
-          <input
-            class="form-control mr-2"
-            style="width: 300px"
-            placeholder="Buscar"
-            type="text"
-          />
-          <button class="btn btn-outline-primary my-2">Buscar</button>
-          <button class="btn btn-outline-success ml-2 my-2">Resetar</button>
+          <input class="form-control mr-2" #search style="width: 300px" placeholder="Buscar" type="text">
+          <button (keyup.enter)="Search()" (click)="Search()" class="btn btn-outline-primary my-2">Buscar</button>
+          <button (click)="Reset()" class="btn btn-outline-success ml-2 my-2">Resetar</button>
         </div>
       </div>
       <div class="row">
         <div class="col-4 mb-4" *ngFor="let p of produtos">
           <app-produto-item [produto]="p"></app-produto-item>
         </div>
+      </div>
+      <div class="d-flex justify-content-center" *ngIf="totalCount > 6">
+        <app-pager
+          [pageSize]="shopParams.pageSize"
+          [totalCount]="totalCount"
+          (pageChanged)="pageChanged($event)"
+        ></app-pager>
       </div>
     </section>
   </div>
