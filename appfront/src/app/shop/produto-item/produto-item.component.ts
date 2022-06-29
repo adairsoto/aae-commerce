@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CarrinhoService } from 'src/app/carrinho/carrinho.service';
 import { IProduto } from 'src/app/shared/models/produto';
 
 @Component({
@@ -9,9 +10,13 @@ import { IProduto } from 'src/app/shared/models/produto';
 export class ProdutoItemComponent implements OnInit {
   @Input() produto: IProduto;
 
-  constructor() { }
+  constructor(private carrinhoService: CarrinhoService) { }
 
   ngOnInit(): void {
+  }
+
+  addItemCarrinho() {
+    this.carrinhoService.addItemCarrinho(this.produto);
   }
 
 }
