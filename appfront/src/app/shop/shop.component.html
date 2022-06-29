@@ -2,7 +2,7 @@
   <div class="row">
     <section class="col-3">
       <ng-container *ngIf="categ && marcas">
-        <h5 class="ml-3 mt-3 mb-3" style="color: blueviolet">Ordenar por:</h5>
+        <h5 class="ml-3 mt-3 mb-3" style="color: #5610c5;">Ordenar por:</h5>
         <select
           class="custom-select mb-3"
           (change)="sortSelec($event.target.value)"
@@ -12,10 +12,10 @@
           </option>
         </select>
 
-        <h5 class="ml-3" style="color: blueviolet">Marcas</h5>
+        <h5 class="ml-3" style="color: #5610c5">Marcas</h5>
         <ul class="list-group my-3">
           <li
-            class="list-group-item"
+            class="list-group-item list-group-item-action active"
             *ngFor="let m of marcas"
             [class.active]="m.id === this.shopParams.marcaId"
             (click)="marcaSelec(m.id)"
@@ -23,10 +23,10 @@
             {{ m.nome }}
           </li>
         </ul>
-        <h5 class="ml-3" style="color: blueviolet">Categorias</h5>
+        <h5 class="ml-3" style="color: #5610c5">Categorias</h5>
         <ul class="list-group my-3">
           <li
-            class="list-group-item"
+            class="list-group-item list-group-item-action active"
             *ngFor="let c of categ"
             [class.active]="c.id === this.shopParams.categId"
             (click)="categSelec(c.id)"

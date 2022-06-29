@@ -10,6 +10,7 @@ namespace API.Extensions
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {  
             services.AddScoped<IProdutoRepository, ProdutoRepository>();
+            services.AddScoped<ICarrinhoRepository, CarrinhoRepository>();
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.Configure<ApiBehaviorOptions>(option =>
             {

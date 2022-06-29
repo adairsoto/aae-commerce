@@ -5,7 +5,7 @@
     min-width: 22px;
     border-radius: 50%;
     font-size: 1em;
-    background: blueviolet;
+    background: #5610c5;
     color: white;
     text-align: center;
     top: -12px;
@@ -17,7 +17,8 @@ a {
     color: #343a40;
 
     &.active {
-        color: orange;
+        color: #5610c5;
+        font-weight: bold;
     }
 }
 
