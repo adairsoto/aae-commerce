@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+.xng-breadcrum-root {
+    padding: 8px 16px;
+    display: inline;
+    border-radius: 0;
+}
+
+label .xng-breadcrum-trail {
+    margin-bottom: 0;
+    color: orange;
+}
+
+.xng-breadcrum-separator {
+    padding: 0 0;
+}

@@ -11,7 +11,7 @@ import { ShopService } from './shop.service';
   styleUrls: ['./shop.component.scss']
 })
 export class ShopComponent implements OnInit {
-  @ViewChild('search', {static: true}) searchTerm: ElementRef;
+  @ViewChild('search', {static: false}) searchTerm: ElementRef;
   produtos: IProduto[];
   marcas: IMarca[];
   categ: ICateg[];
@@ -19,7 +19,7 @@ export class ShopComponent implements OnInit {
   totalCount: number;
 
   sortOptions = [
-    {nome: 'Ordem alfabética', value: 'nome'},
+    {nome: 'A - Z', value: 'nome'},
     {nome: 'Preço: menor a maior', value: 'precoAsc'},
     {nome: 'Preço: maior a menor', value: 'precoDesc'},
   ];
