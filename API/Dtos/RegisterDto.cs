@@ -4,16 +4,16 @@ namespace API.Dtos
 {
     public class RegisterDto
     {
-        [Required]
+        [Required(ErrorMessage = "Campo obrigatório")]
         public string DisplayName { get; set; }
 
-        [Required]
-        [EmailAddress]
+        [Required(ErrorMessage = "Campo obrigatório")]
+        [EmailAddress(ErrorMessage = "E-mail inválido")]
         public string Email { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Campo obrigatório")]
         [RegularExpression("(?=^.{6,10}$)(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\\s).*$", 
-            ErrorMessage = "Password must have 1 Uppercase, 1 Lowercase, 1 number, 1 non alphanumeric and at least 6 characters")]
+            ErrorMessage = "A senha deve ter pelo menos 6 caracteres com letra maiúscula, letra minúscula, número e caracter especial")]
         public string Password { get; set; }
     }
-}
+}             

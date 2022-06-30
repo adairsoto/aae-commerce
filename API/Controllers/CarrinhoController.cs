@@ -1,3 +1,5 @@
+using API.Dtos;
+using AutoMapper;
 using Main.Interfaces;
 using Main.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -7,8 +9,10 @@ namespace API.Controllers
     public class CarrinhoController : BaseApiController
     {
         private readonly ICarrinhoRepository _carrinhoRepository;
-        public CarrinhoController(ICarrinhoRepository carrinhoRepository)
+        private readonly IMapper _mapper;
+        public CarrinhoController(ICarrinhoRepository carrinhoRepository, IMapper mapper)
         {
+            _mapper = mapper;
             _carrinhoRepository = carrinhoRepository;
         }
 
@@ -21,9 +25,11 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<CarrinhoCliente>> UpdateCarrinho (CarrinhoCliente carrinho)
+        public async Task<ActionResult<CarrinhoCliente>> UpdateCarrinho (CarrinhoClienteDto carrinho)
         {
-            var updatedCarrinho = await _carrinhoRepository.UpdateCarrinhoAsync(carrinho);
+            var carrinhoCliente = _mapper.Map<CarrinhoCliente>(carrinho);
+
+            var updatedCarrinho = await _carrinhoRepository.UpdateCarrinhoAsync(carrinhoCliente);
 
             return Ok(updatedCarrinho);
         }

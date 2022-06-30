@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using API.Dtos;
 using AutoMapper;
 using Main.Models;
@@ -17,7 +13,9 @@ namespace API.Helpers
                 .ForMember(d => d.ProdutoMarca, o => o.MapFrom(s => s.ProdutoMarca.Nome))
                 .ForMember(d => d.ProdutoCategoria, o => o.MapFrom(s => s.ProdutoCategoria.Nome))
                 .ForMember(d => d.ImagemUrl, o => o.MapFrom<ProdutoUrlResolver>());
-            CreateMap<Address, AddressDto>().ReverseMap();    
+            CreateMap<Address, AddressDto>().ReverseMap(); 
+            CreateMap<CarrinhoClienteDto, CarrinhoCliente>();
+            CreateMap<CarrinhoItemDto, CarrinhoItem>();   
         }
     }
 }
