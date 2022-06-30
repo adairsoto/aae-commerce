@@ -21,7 +21,7 @@ export class Carrinho implements ICarrinho {
 }
 
 export interface ICarrinhoTotal {
-    entrega: number;
+    entrega: number 
     subtotal: number
     total: number
 }
