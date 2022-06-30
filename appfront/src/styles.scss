@@ -1,19 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+.xng-breadcrumb-root {
+    padding: 16px 16px;
+    display: inline;
+    border-radius: 0;
+}
 
-// .xng-breadcrum-root {
-//     padding: 8px 16px;
-//     display: inline;
-//     border-radius: 0;
-// }
+label.xng-breadcrumb-trail {
+    margin-bottom: 0;
+    color: #5610c5;
+}
 
-// .xng-breadcrum-trail {
-//     margin-bottom: 0;
-//     color: orange;
-// }
-
-// .xng-breadcrum-separator {
-//     padding: 0 0;
-// }
+.xng-breadcrumb-separator {
+    padding: 0 0;
+}
 
 .pagination > li > a
 {

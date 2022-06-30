@@ -31,7 +31,7 @@ export class ShopComponent implements OnInit {
     this.getCateg();
     this.getMarcas();
   }
-
+ 
   getProdutos() {
     this.shopService.getProdutos(this.shopParams).subscribe(response => {
       this.produtos = response.data;

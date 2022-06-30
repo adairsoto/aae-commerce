@@ -48,6 +48,46 @@ export class CarrinhoService {
     this.setCarrinho(carrinho);
   }
 
+  incrementItemQuantidade(item: ICarrinhoItem) {
+    const carrinho = this.getCurrentCarrinhoValue();
+    const foundItemIndex = carrinho.itens.findIndex(x => x.id === item.id);
+    carrinho.itens[foundItemIndex].quantidade++;
+    this.setCarrinho(carrinho);
+  }
+
+  decrementItemQuantidade(item: ICarrinhoItem) {
+    const carrinho = this.getCurrentCarrinhoValue();
+    const foundItemIndex = carrinho.itens.findIndex(x => x.id === item.id);
+    if (carrinho.itens[foundItemIndex].quantidade > 1){
+      carrinho.itens[foundItemIndex].quantidade--;
+      this.setCarrinho(carrinho);
+    } else {
+      this.removeItemCarrinho(item);
+    }
+  }
+  
+  removeItemCarrinho(item: ICarrinhoItem) {
+    const carrinho = this.getCurrentCarrinhoValue(); 
+    if (carrinho.itens.some(x => x.id === item.id)) {
+      carrinho.itens = carrinho.itens.filter(i => i.id !== item.id);
+      if (carrinho.itens.length > 0) {
+        this.setCarrinho(carrinho);
+      } else {
+        this.deleteCarrinho(carrinho);
+      }
+    }
+  }
+
+  deleteCarrinho(carrinho: ICarrinho) {
+    return this.http.delete(this.baseUrl + 'carrinho?id=' + carrinho.id).subscribe(() => {
+      this.carrinhoSource.next(null);
+      this.carrinhoTotalSource.next(null);
+      localStorage.removeItem('carrinho_id');
+    }, error => {
+      console.log(error);
+    });
+  }
+
   private calculateTotals() {
     const carrinho = this.getCurrentCarrinhoValue();
     const entrega = 0;

@@ -1,0 +1,19 @@
+<div class="bg-light px-4 py-3 text-uppercase font-weight-bold">
+    Resumo do pedido
+</div>
+<div class="p-4">
+    <p class="font-italic mb4">Shipping costs will be added depending on choices made during checkout</p>
+    <ul class="list-unstyled mb-4" *ngIf="(carrinhoTotal$ | async)"></ul>
+        <li class="d-flex justify-content-between py-3 border-bottom">
+            <strong class="text-muted">Subtotal</strong>
+            <strong>{{(carrinhoTotal$|async).subtotal | currency: 'BRL'}}</strong>
+        </li>    
+        <li class="d-flex justify-content-between py-3 border-bottom">
+            <strong class="text-muted">Frete</strong>
+            <strong>{{(carrinhoTotal$|async).entrega | currency: 'BRL'}}</strong>
+        </li>
+        <li class="d-flex justify-content-between py-3 border-bottom">
+            <strong class="text-muted">Total do pedido</strong>
+            <strong>{{(carrinhoTotal$|async).total | currency: 'BRL'}}</strong>
+        </li>
+</div>
