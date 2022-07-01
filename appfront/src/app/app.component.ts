@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AccountService } from './account/account.service';
 import { CarrinhoService } from './carrinho/carrinho.service';
 
 @Component({
@@ -9,9 +10,23 @@ import { CarrinhoService } from './carrinho/carrinho.service';
 export class AppComponent implements OnInit {
   title = 'A&A e-commerce';
 
-  constructor(private carrinhoService: CarrinhoService) {}
+  constructor(private carrinhoService: CarrinhoService, private accountService: AccountService) {}
 
   ngOnInit(): void {
+    this.loadBasket();
+    this.loadCurrentUser();
+  }
+
+  loadCurrentUser() {
+    const token = localStorage.getItem('token');
+    this.accountService.loadCurrentUser(token).subscribe(() => {
+      console.log('loaded user');
+    }, error => {
+      console.log(error);
+    })
+  }
+
+  loadBasket() {
     const carrinhoId = localStorage.getItem('carrinho_id');
     if (carrinhoId) {
       this.carrinhoService.getCarrinho(carrinhoId).subscribe(() => {
@@ -22,3 +37,5 @@ export class AppComponent implements OnInit {
     }
   }
 }
+
+
