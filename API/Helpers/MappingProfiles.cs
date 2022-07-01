@@ -15,7 +15,8 @@ namespace API.Helpers
                 .ForMember(d => d.ImagemUrl, o => o.MapFrom<ProdutoUrlResolver>());
             CreateMap<Address, AddressDto>().ReverseMap(); 
             CreateMap<CarrinhoClienteDto, CarrinhoCliente>();
-            CreateMap<CarrinhoItemDto, CarrinhoItem>();   
+            CreateMap<CarrinhoItemDto, CarrinhoItem>(); 
+            CreateMap<AddressDto, Main.Models.OrderAggregate.Address>();  
         }
     }
 }

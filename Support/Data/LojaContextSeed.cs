@@ -1,9 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.Json;
-using System.Threading.Tasks;
 using Main.Models;
+using Main.Models.OrderAggregate;
 using Microsoft.Extensions.Logging;
 
 namespace Support.Data
@@ -50,6 +47,19 @@ namespace Support.Data
                     {
                         context.Produtos.Add(item);
                     }
+                    await context.SaveChangesAsync();
+                }
+
+                if (!context.DeliveryMethods.Any())
+                {
+                    var dmData = File.ReadAllText("../Support/Data/SeedData/delivery.json");
+                    var methods = JsonSerializer.Deserialize<List<DeliveryMethod>>(dmData);
+
+                    foreach (var item in methods)
+                    {
+                        context.DeliveryMethods.Add(item);
+                    }
+
                     await context.SaveChangesAsync();
                 }
             }

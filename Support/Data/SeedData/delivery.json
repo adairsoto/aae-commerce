@@ -1,0 +1,26 @@
+[
+  {
+    "ShortName": "Rápida",
+    "Description": "Seu produto pode chegar amanhã",
+    "DeliveryTime": "1-2 Dias",
+    "Price": 20
+  },
+  {
+    "ShortName": "Normal",
+    "Description": "Seu produto em até 5 dias",
+    "DeliveryTime": "5-10 Dias",
+    "Price": 10
+  },
+  {
+    "ShortName": "Agendada",
+    "Description": "Escolha o melhor dia para entrega",
+    "DeliveryTime": "De acordo com a escolha do cliente",
+    "Price": 30
+  },
+  {
+    "ShortName": "Grátis",
+    "Description": "Pague somente pelo produto",
+    "DeliveryTime": "15-20 Dias",
+    "Price": 0
+  }
+]
